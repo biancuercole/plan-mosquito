@@ -5,11 +5,13 @@ using System.Linq;
 
 public class Menu : MonoBehaviour
 {
-    private string[] levelNames = new string[3]
+    private string[] levelNames = new string[5]
     {
         "NivelCasas",
         "NivelPatio",
-        "NivelBaldes"
+        "NivelBaldes",
+        "NivelRopa",
+        "NivelNenes"
     };
 
     private static HashSet<string> playedLevels = new HashSet<string>();
@@ -31,6 +33,7 @@ public class Menu : MonoBehaviour
 
     public void ReturnMenu()
     {
+        playedLevels.Clear();
         SceneManager.LoadScene("MainMenu");
     }
 

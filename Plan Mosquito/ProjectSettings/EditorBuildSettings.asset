@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/CorrectAnswerPatio.unity
     guid: 6b0c4c3f06613c94791fa03d13906906
   - enabled: 1
+    path: Assets/Scenes/CorrectAnswerRopa.unity
+    guid: 2dedc0db53c7e7049844fd6ad9cb598b
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
@@ -33,6 +36,9 @@ EditorBuildSettings:
     path: Assets/Scenes/NivelPatio.unity
     guid: 36a169c73fbb4cd45abc5ecb64409fac
   - enabled: 1
+    path: Assets/Scenes/NivelRopa.unity
+    guid: f317a965b41b6f045b73ec1a72e84fcb
+  - enabled: 1
     path: Assets/Scenes/Victory.unity
     guid: 32743923bef91164298591c97fd9c3ce
   - enabled: 1
@@ -47,6 +53,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WrongAnswerPatio.unity
     guid: 521e5b8b3b541c443bb695f5e37ee484
+  - enabled: 1
+    path: Assets/Scenes/WrongAnswerRopa.unity
+    guid: c96f794b9e8f51a46ba389e073958fba
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

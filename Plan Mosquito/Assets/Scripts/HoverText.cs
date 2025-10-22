@@ -24,6 +24,12 @@ public class HoverText : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     private bool isHovering = false;
     private Menu menuScript;
 
+    //agrandar imag
+
+    [SerializeField] private Button _button;
+    [SerializeField] private Vector3 _scale = new Vector3(1.2f, 1.2f, 1.2f);
+    private Vector3 _normalScale;
+
     void Start()
     {
         if (textObject != null)
@@ -56,6 +62,8 @@ public class HoverText : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         }
 
         if (debugMode) Debug.Log($"HoverText configurado en {gameObject.name} - Modo UI: {useUIEvents}");
+
+        _normalScale = _button.transform.localScale;
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -66,6 +74,9 @@ public class HoverText : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
             ShowText();
             isHovering = true;
         }
+
+        if (_button.interactable)
+            _button.transform.localScale = _scale;
     }
 
     public void OnPointerExit(PointerEventData eventData)
@@ -76,6 +87,8 @@ public class HoverText : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
             HideText();
             isHovering = false;
         }
+
+        _button.transform.localScale = _normalScale;
     }
 
     void OnMouseEnter()
@@ -189,4 +202,9 @@ public class HoverText : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         HideText();
         isHovering = false;
     }
+
+
+    // agrandar imag
+
+
 }
