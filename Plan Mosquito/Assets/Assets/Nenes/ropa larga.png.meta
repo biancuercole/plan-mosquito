@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ropa larga_0: -5770595517990165301
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

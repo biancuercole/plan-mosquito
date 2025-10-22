@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      patioAgua_0: -5792107451525645107
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ropacorta_0: -4004389552952535763
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
