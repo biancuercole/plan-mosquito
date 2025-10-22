@@ -6,8 +6,47 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/CorrectAnswerBaldes.unity
+    guid: 794776e63c9ab3a4692b37dc13be9ca5
+  - enabled: 1
+    path: Assets/Scenes/CorrectAnswerCasas.unity
+    guid: 87697fdcd43fb374880a4a89fe8ffd00
+  - enabled: 1
+    path: Assets/Scenes/CorrectAnswerNenes.unity
+    guid: 4e45845790e772046bd2b213796d7f87
+  - enabled: 1
+    path: Assets/Scenes/CorrectAnswerPatio.unity
+    guid: 6b0c4c3f06613c94791fa03d13906906
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/NivelBaldes.unity
+    guid: 839ae2608898cca44a9f9c7a89fca56e
+  - enabled: 1
+    path: Assets/Scenes/NivelCasas.unity
+    guid: 1dd45c8c7e23b9040a744c6c2cf9885f
+  - enabled: 1
+    path: Assets/Scenes/NivelNenes.unity
+    guid: b65791db88b82154990ec350f46779f4
+  - enabled: 1
+    path: Assets/Scenes/NivelPatio.unity
+    guid: 36a169c73fbb4cd45abc5ecb64409fac
+  - enabled: 1
+    path: Assets/Scenes/Victory.unity
+    guid: 32743923bef91164298591c97fd9c3ce
+  - enabled: 1
+    path: Assets/Scenes/WrongAnswerBaldes.unity
+    guid: 77695992e84530f4586b705bea0470c1
+  - enabled: 1
+    path: Assets/Scenes/WrongAnswerCasas.unity
+    guid: b840143d4d3bf714a99a0f483516e936
+  - enabled: 1
+    path: Assets/Scenes/WrongAnswerNenes.unity
+    guid: 4b410acbc80458e4f9a8f632b3318e48
+  - enabled: 1
+    path: Assets/Scenes/WrongAnswerPatio.unity
+    guid: 521e5b8b3b541c443bb695f5e37ee484
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
