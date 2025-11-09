@@ -77,6 +77,7 @@ public class HoverText : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 
         if (_button.interactable)
             _button.transform.localScale = _scale;
+        AudioManager.Instance._sfxSource.PlayOneShot(AudioManager.Instance._buttonHover);
     }
 
     public void OnPointerExit(PointerEventData eventData)

@@ -18,6 +18,7 @@ public class ChangeButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         {
             _newScale = _scale;
             _button.transform.localScale = _newScale;
+            AudioManager.Instance._sfxSource.PlayOneShot(AudioManager.Instance._buttonHover);
         }
 
     }

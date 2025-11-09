@@ -5,13 +5,15 @@ using System.Linq;
 
 public class Menu : MonoBehaviour
 {
-    private string[] levelNames = new string[5]
+
+    private string[] levelNames = new string[6]
     {
         "NivelCasas",
         "NivelPatio",
         "NivelBaldes",
         "NivelRopa",
-        "NivelNenes"
+        "NivelNenes",
+        "HideFromRaid"
     };
 
     private static HashSet<string> playedLevels = new HashSet<string>();
@@ -23,17 +25,20 @@ public class Menu : MonoBehaviour
 
     public void CorrectAnswer(string theme)
     {
+        PointsManager.Instance.AddPoints(10);
         SceneManager.LoadScene("CorrectAnswer" + theme);
     }
 
     public void WrongAnswer(string theme)
     {
+        PointsManager.Instance.SubtractPoints(5);
         SceneManager.LoadScene("WrongAnswer" + theme);
     }
 
     public void ReturnMenu()
     {
         playedLevels.Clear();
+        PointsManager.Instance.RestartPlayerPrefs();
         SceneManager.LoadScene("MainMenu");
     }
 
@@ -62,6 +67,7 @@ public class Menu : MonoBehaviour
     public void ResetPlayedLevels()
     {
         playedLevels.Clear();
+        PointsManager.Instance.RestartPlayerPrefs();
         Debug.Log("Lista de niveles jugados reiniciada.");
     }
 
