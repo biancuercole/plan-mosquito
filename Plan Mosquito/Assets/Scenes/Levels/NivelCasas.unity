@@ -264,12 +264,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1291438995738334756, guid: a6d0ce1b43ec614499f446a317ca4aa3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.058572
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291438995738334756, guid: a6d0ce1b43ec614499f446a317ca4aa3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.058572
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291438995738334756, guid: a6d0ce1b43ec614499f446a317ca4aa3, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.058572
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291438995738334756, guid: a6d0ce1b43ec614499f446a317ca4aa3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.64
+      value: -3.41
       objectReference: {fileID: 0}
     - target: {fileID: 1291438995738334756, guid: a6d0ce1b43ec614499f446a317ca4aa3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.96
+      value: -3.2
       objectReference: {fileID: 0}
     - target: {fileID: 1291438995738334756, guid: a6d0ce1b43ec614499f446a317ca4aa3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -638,6 +650,7 @@ MonoBehaviour:
   debugMode: 0
   _button: {fileID: 560346181}
   _scale: {x: 3.2, y: 15.7, z: 1}
+  confirmTime: 1.5
 --- !u!114 &871017391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -736,6 +749,7 @@ MonoBehaviour:
   debugMode: 0
   _button: {fileID: 668580380}
   _scale: {x: 3.2, y: 15.7, z: 1}
+  confirmTime: 1.5
 --- !u!114 &878791232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -881,6 +895,7 @@ MonoBehaviour:
   debugMode: 0
   _button: {fileID: 0}
   _scale: {x: 1.2, y: 1.2, z: 1.2}
+  confirmTime: 1.5
 --- !u!114 &881491230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1113,6 +1128,7 @@ MonoBehaviour:
   debugMode: 0
   _button: {fileID: 0}
   _scale: {x: 1.2, y: 1.2, z: 1.2}
+  confirmTime: 1.5
 --- !u!114 &1135267399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1609,6 +1625,7 @@ MonoBehaviour:
   debugMode: 0
   _button: {fileID: 0}
   _scale: {x: 1.2, y: 1.2, z: 1.2}
+  confirmTime: 1.5
 --- !u!212 &1244386860
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2891,6 +2908,7 @@ MonoBehaviour:
   debugMode: 0
   _button: {fileID: 1202477513}
   _scale: {x: 3.2, y: 15.7, z: 1}
+  confirmTime: 1.5
 --- !u!114 &1908923386
 MonoBehaviour:
   m_ObjectHideFlags: 0
