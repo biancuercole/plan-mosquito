@@ -88,7 +88,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!114 &5875603148495995192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103,7 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prefabSpray: {fileID: 8999289032197269166, guid: 173baef7983829a4f8dfc08a6d84595d, type: 3}
   _lifetime: 4
-  _offSet: {x: 8, y: 3.5, z: 0}
+  _offSet: {x: 5.8, y: 0, z: 0}
 --- !u!61 &204295286389772069
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -138,15 +138,15 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.71421456}
+  m_Offset: {x: -2.759616, y: -3.6021078}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.81685257, y: 0.89307046}
     oldSize: {x: 7.78, y: 8.78}
     newSize: {x: 5.06, y: 5.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 5.06, y: 5.1866794}
+  m_Size: {x: 7.126173, y: 7.6491055}
   m_EdgeRadius: 0
