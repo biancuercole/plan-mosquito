@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections;
-using TMPro.EditorUtilities;
+//using TMPro.EditorUtilities;
 public class EnemySpawn : MonoBehaviour
 {
     [Header("Configuraci�n de Spawn")]

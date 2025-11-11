@@ -1,0 +1,12 @@
+# ninja log v5
+89	1076	7845994173573235	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	cab2374de127a0c2
+1079	1630	7845994178957094	D:/UNIVERSIDAD/Unity proyectos/PAEF/plan-mosquito/Plan Mosquito/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1q1b5r30/obj/arm64-v8a/libswappywrapper.so	4db03d13f8ea2a27
+34	3342	7845994196176796	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	57f4621355a07427
+51	3364	7845994196338800	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	43bd461c8d3a98c
+65	3387	7845994196651277	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	84a5eb9f476a3004
+1	3422	7845994197077421	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	244235b2f482f070
+25	3511	7845994197973053	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	1bc46071c1bdf886
+42	3879	7845994201626502	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	b3612bd17f6f6f39
+77	3889	7845994201674935	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	4a140350b79e508d
+13	4056	7845994203458377	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	34deda52c7d5807e
+4057	4219	7845994205135119	D:/UNIVERSIDAD/Unity proyectos/PAEF/plan-mosquito/Plan Mosquito/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1q1b5r30/obj/arm64-v8a/libgame.so	327d59d1aeb4638d
