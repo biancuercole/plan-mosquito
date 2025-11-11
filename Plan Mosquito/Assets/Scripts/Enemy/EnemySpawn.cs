@@ -3,7 +3,7 @@ using System.Collections;
 using TMPro.EditorUtilities;
 public class EnemySpawn : MonoBehaviour
 {
-    [Header("Configuración de Spawn")]
+    [Header("Configuraciï¿½n de Spawn")]
     public GameObject enemyPrefab;
     public float topLimit = 4f;
     public float bottomLimit = -4f;
@@ -22,7 +22,7 @@ public class EnemySpawn : MonoBehaviour
     {
         while (_currentEnemies <= _spawnEnemies)
         {
-            // Genera una posición aleatoria en el eje Y
+            // Genera una posiciï¿½n aleatoria en el eje Y
             float randomY = Random.Range(bottomLimit, topLimit);
             Vector3 spawnPos = new Vector3(transform.position.x, randomY, transform.position.z);
 
@@ -32,6 +32,23 @@ public class EnemySpawn : MonoBehaviour
             yield return new WaitForSeconds(spawnInterval);
             _currentEnemies++;
         }
-        _sceneManager.ChangeScene("Victory");
+        Debug.Log($"EnemySpawn: spawn loop finished (_currentEnemies={_currentEnemies}, _spawnEnemies={_spawnEnemies}). Calling Victory via _sceneManager.");
+        if (_sceneManager == null)
+        {
+            Debug.LogWarning("EnemySpawn: _sceneManager is null. Attempting to find Menu in scene.");
+            var found = FindObjectOfType<Menu>();
+            if (found != null)
+            {
+                found.ChangeScene("VictoryMinigame");
+            }
+            else
+            {
+                Debug.LogError("EnemySpawn: No Menu found to load Victory.");
+            }
+        }
+        else
+        {
+            _sceneManager.ChangeScene("VictoryMinigame");
+        }
     }
 }

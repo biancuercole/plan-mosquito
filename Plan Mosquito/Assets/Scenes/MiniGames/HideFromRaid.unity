@@ -619,7 +619,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7356187573965745677, guid: 6ba868ff5f9cad7478ab524c02835a75, type: 3}
+  m_Sprite: {fileID: 754085710834967347, guid: 7e2621d53a4bb3e46a203a379dcd73fd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -716,7 +716,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Points:'
+  m_text: 'Puntos: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f84faba932ccd5643be35ed2e90e77b0, type: 2}
   m_sharedMaterial: {fileID: -3868485972501437625, guid: f84faba932ccd5643be35ed2e90e77b0, type: 2}
@@ -725,8 +725,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4284162076
+  m_fontColor: {r: 0.111605525, g: 0.123600364, b: 0.3584906, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -808,6 +808,7 @@ GameObject:
   - component: {fileID: 1133397903}
   - component: {fileID: 1133397902}
   - component: {fileID: 1133397904}
+  - component: {fileID: 1133397905}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -859,9 +860,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -7335345776834287784, guid: 0c72b84c25c9d4c4ea070dc3e5fb718e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4031568922379b54c9f838760a88b834, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 5, y: 4.92}
@@ -880,7 +881,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.61, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 7}
+  m_LocalScale: {x: 1.0365471, y: 1.0451504, z: 10.36547}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -938,7 +939,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5, y: 4.92}
+    oldSize: {x: 7.142857, y: 8.571428}
     newSize: {x: 5, y: 4.92}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -962,6 +963,28 @@ MonoBehaviour:
   _flashColor: {r: 0.9811321, g: 0.53073657, b: 0.45817015, a: 1}
   _flashDuration: 0.1
   _flashCount: 3
+--- !u!95 &1133397905
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133397899}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e0ccbb7dcf0bd924e89c841c825a04b7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1269347139
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,7 +1042,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: NO MUERAS
+  m_text: "ESQUIV\xC1 EL REPELENTE"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f84faba932ccd5643be35ed2e90e77b0, type: 2}
   m_sharedMaterial: {fileID: -3868485972501437625, guid: f84faba932ccd5643be35ed2e90e77b0, type: 2}
@@ -1028,8 +1051,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278245375
-  m_fontColor: {r: 1, g: 0.8431373, b: 0, a: 1}
+    rgba: 4287766033
+  m_fontColor: {r: 0.0665914, g: 0.117635876, b: 0.57232696, a: 1}
   m_enableVertexGradient: 1
   m_colorMode: 3
   m_fontColorGradient:
@@ -1155,10 +1178,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Down
+  m_text: BAJAR
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d2e7d52e8a23724d9c89ce4d2dd0e59, type: 2}
+  m_sharedMaterial: {fileID: -8064568077878737967, guid: 4d2e7d52e8a23724d9c89ce4d2dd0e59, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1182,10 +1205,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 58.9
-  m_fontSizeBase: 24
+  m_fontSize: 38.2
+  m_fontSizeBase: 38.2
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -1568,10 +1591,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: UP
+  m_text: SUBIR
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d2e7d52e8a23724d9c89ce4d2dd0e59, type: 2}
+  m_sharedMaterial: {fileID: -8064568077878737967, guid: 4d2e7d52e8a23724d9c89ce4d2dd0e59, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1595,10 +1618,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 24
+  m_fontSize: 42.61
+  m_fontSizeBase: 42.61
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0

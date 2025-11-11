@@ -30,11 +30,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/NivelCasas.unity
     guid: 1dd45c8c7e23b9040a744c6c2cf9885f
   - enabled: 1
+    path: Assets/Scenes/About.unity
+    guid: 0e06c25b5dc82b942ac14ff8c33e876f
+  - enabled: 1
     path: Assets/Scenes/Levels/NivelNenes.unity
     guid: b65791db88b82154990ec350f46779f4
   - enabled: 1
     path: Assets/Scenes/Levels/NivelPatio.unity
     guid: 36a169c73fbb4cd45abc5ecb64409fac
+  - enabled: 1
+    path: Assets/Scenes/MiniGames/VictoryMinigame.unity
+    guid: e3fc91e17728bab40bd2fc91b42669e7
   - enabled: 1
     path: Assets/Scenes/Levels/NivelRopa.unity
     guid: f317a965b41b6f045b73ec1a72e84fcb

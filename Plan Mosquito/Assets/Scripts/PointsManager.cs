@@ -1,6 +1,7 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PointsManager : MonoBehaviour
 {
@@ -27,8 +28,38 @@ public class PointsManager : MonoBehaviour
 
     void Start()
     {
+        // Cargar puntos guardados
         _points = PlayerPrefs.GetInt(PointsKey, 0);
+        // Si la escena actual es MainMenu, forzamos a 0 según la petición
+        if (SceneManager.GetActiveScene().name == "MainMenu")
+        {
+            _points = 0;
+            PlayerPrefs.SetInt(PointsKey, 0);
+            PlayerPrefs.Save();
+        }
         UpdatePoints();
+    }
+
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "MainMenu")
+        {
+            // Reiniciar puntos cuando se entra al MainMenu
+            _points = 0;
+            PlayerPrefs.SetInt(PointsKey, 0);
+            PlayerPrefs.Save();
+            UpdatePoints();
+        }
     }
 
     void Update()
@@ -68,7 +99,12 @@ public class PointsManager : MonoBehaviour
 
     public void RestartPlayerPrefs()
     {
-        PlayerPrefs.DeleteAll();
+        // Borra únicamente la clave de puntos para no eliminar otras preferencias del juego
+        if (PlayerPrefs.HasKey(PointsKey))
+        {
+            PlayerPrefs.DeleteKey(PointsKey);
+            PlayerPrefs.Save();
+        }
         _points = 0;
         UpdatePoints();
     }

@@ -1563,7 +1563,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 974bdf5cbe79d164bacdd928cbe1cfe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pointsManager: {fileID: 1640092060}
 --- !u!4 &1923621076
 Transform:
   m_ObjectHideFlags: 0
@@ -2024,7 +2023,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1923621075}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: ReturnMenu
+        m_MethodName: RandomLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
