@@ -30,6 +30,11 @@ public class HoverText : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     [SerializeField] private Vector3 _scale = new Vector3(1.2f, 1.2f, 1.2f);
     private Vector3 _normalScale;
 
+    //doble seleccion para mobile
+    [SerializeField] private float confirmTime = 1.5f; 
+    private bool waitingForConfirm = false;
+    private float confirmTimer = 0f;
+
     void Start()
     {
         if (textObject != null)
@@ -66,6 +71,18 @@ public class HoverText : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         _normalScale = _button.transform.localScale;
     }
 
+    void Update()
+    {
+        if (waitingForConfirm)
+        {
+            confirmTimer -= Time.deltaTime;
+            if (confirmTimer <= 0)
+            {
+                waitingForConfirm = false;
+                HideText();
+            }
+        }
+    }
     public void OnPointerEnter(PointerEventData eventData)
     {
         if (useUIEvents && !isHovering)
@@ -205,7 +222,31 @@ public class HoverText : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     }
 
 
-    // agrandar imag
+    // doble seleccion mobile
+    public void OnButtonPressed()
+    {
+        // Si no estaba esperando confirmación, este es el primer toque
+        if (!waitingForConfirm)
+        {
+            waitingForConfirm = true;
+            confirmTimer = confirmTime;
 
+            ShowText(); // Mostrar el texto de ayuda
+            isHovering = true;
+
+            // Evitar que el otro script ejecute la acción todavía
+            // Podés devolver aquí si este script intercepta el click
+            return;
+        }
+        else
+        {
+            // Segundo toque dentro del tiempo -> confirmar acción
+            waitingForConfirm = false;
+            HideText();
+
+            // Dejar que el botón ejecute su acción normal
+            _button.onClick.Invoke();
+        }
+    }
 
 }

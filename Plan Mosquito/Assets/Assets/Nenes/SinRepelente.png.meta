@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 67a86cc14fd0dce4688a05cc0a26a08a
+guid: ad27c88dfbe59f34f92cd20108117a8f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2484912541016061911
-    second: patioenperspectiva_0
+      213: 5862562915159086721
+    second: SinRepelente_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,19 +97,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -126,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: patioenperspectiva_0
+      name: SinRepelente_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1080
+        width: 790
+        height: 437
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 92803d6a531d38dd0800000000000000
-      internalID: -2484912541016061911
+      spriteID: 1869f6ff8e10c5150800000000000000
+      internalID: 5862562915159086721
       vertices: []
       indices: 
       edges: []
@@ -161,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      patioenperspectiva_0: -2484912541016061911
+      SinRepelente_0: 5862562915159086721
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

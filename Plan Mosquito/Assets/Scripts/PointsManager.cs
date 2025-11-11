@@ -94,7 +94,7 @@ public class PointsManager : MonoBehaviour
 
     public void UpdatePoints()
     {
-        _textPoints.text = "Points: " + _points;
+        _textPoints.text = "PUNTOS: " + _points;
     }
 
     public void RestartPlayerPrefs()

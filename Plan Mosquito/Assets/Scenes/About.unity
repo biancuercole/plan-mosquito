@@ -178,8 +178,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "INFORMACI\xD3N SOBRE\nDENGUE"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4d2e7d52e8a23724d9c89ce4d2dd0e59, type: 2}
-  m_sharedMaterial: {fileID: -8064568077878737967, guid: 4d2e7d52e8a23724d9c89ce4d2dd0e59, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f84faba932ccd5643be35ed2e90e77b0, type: 2}
+  m_sharedMaterial: {fileID: -3868485972501437625, guid: f84faba932ccd5643be35ed2e90e77b0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -315,15 +315,15 @@ MonoBehaviour:
   m_text: "LOS MOSQUITOS AMAN QUE LOS NI\xD1OS NO USEN REPELENTE Y NO SE CUBRAN LA
     PIEL"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4d2e7d52e8a23724d9c89ce4d2dd0e59, type: 2}
-  m_sharedMaterial: {fileID: -8064568077878737967, guid: 4d2e7d52e8a23724d9c89ce4d2dd0e59, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f84faba932ccd5643be35ed2e90e77b0, type: 2}
+  m_sharedMaterial: {fileID: -3868485972501437625, guid: f84faba932ccd5643be35ed2e90e77b0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4280435483
-  m_fontColor: {r: 0.10549421, g: 0.26415092, b: 0.13458128, a: 1}
+    rgba: 4279780878
+  m_fontColor: {r: 0.05549128, g: 0.2735849, b: 0.09365765, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1392,15 +1392,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: LOS MOSQUITOS AMAN LOS PASTOS ALTOS
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4d2e7d52e8a23724d9c89ce4d2dd0e59, type: 2}
-  m_sharedMaterial: {fileID: -8064568077878737967, guid: 4d2e7d52e8a23724d9c89ce4d2dd0e59, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f84faba932ccd5643be35ed2e90e77b0, type: 2}
+  m_sharedMaterial: {fileID: -3868485972501437625, guid: f84faba932ccd5643be35ed2e90e77b0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4280435483
-  m_fontColor: {r: 0.10549421, g: 0.26415092, b: 0.13458128, a: 1}
+    rgba: 4279780879
+  m_fontColor: {r: 0.05882353, g: 0.27450982, b: 0.09411765, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1528,15 +1528,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: LOS MOSQUITOS AMAN EL AGUA DE LLUVIA
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4d2e7d52e8a23724d9c89ce4d2dd0e59, type: 2}
-  m_sharedMaterial: {fileID: -8064568077878737967, guid: 4d2e7d52e8a23724d9c89ce4d2dd0e59, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f84faba932ccd5643be35ed2e90e77b0, type: 2}
+  m_sharedMaterial: {fileID: -3868485972501437625, guid: f84faba932ccd5643be35ed2e90e77b0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4280435483
-  m_fontColor: {r: 0.10549421, g: 0.26415092, b: 0.13458128, a: 1}
+    rgba: 4279780879
+  m_fontColor: {r: 0.05882353, g: 0.27450982, b: 0.09411765, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

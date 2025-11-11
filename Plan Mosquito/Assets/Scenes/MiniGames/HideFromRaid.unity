@@ -680,8 +680,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 655, y: 401}
-  m_SizeDelta: {x: 300, y: 50}
+  m_AnchoredPosition: {x: 760, y: 401}
+  m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &987630448
 MonoBehaviour:
@@ -716,7 +716,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Puntos: '
+  m_text: 'PUNTOS: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f84faba932ccd5643be35ed2e90e77b0, type: 2}
   m_sharedMaterial: {fileID: -3868485972501437625, guid: f84faba932ccd5643be35ed2e90e77b0, type: 2}
@@ -743,8 +743,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -881,7 +881,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.61, y: 0, z: 0}
-  m_LocalScale: {x: 1.0365471, y: 1.0451504, z: 10.36547}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 10.36547}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -898,9 +898,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87e1247a0196d0f409302acc0cec13a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 5
-  topLimit: 4
-  bottomLimit: -4
+  _speed: 10
+  topLimit: 3
+  bottomLimit: -3
 --- !u!61 &1133397903
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -935,7 +935,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.07, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -945,7 +945,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 5, y: 4.92}
+  m_Size: {x: 2, y: 4.92}
   m_EdgeRadius: 0
 --- !u!114 &1133397904
 MonoBehaviour:
@@ -1513,8 +1513,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 521050392411448624, guid: 65b55987b822ed64886d429c53a42a5d, type: 3}
-  topLimit: 4
-  bottomLimit: -4
+  topLimit: 3
+  bottomLimit: -3
   spawnInterval: 4
   _spawnEnemies: 5
   _currentEnemies: 0

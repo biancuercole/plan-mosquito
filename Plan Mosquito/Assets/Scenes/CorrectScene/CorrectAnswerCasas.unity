@@ -363,8 +363,8 @@ RectTransform:
   m_Children:
   - {fileID: 1704927861}
   - {fileID: 238784343}
-  - {fileID: 838778008}
   - {fileID: 659156813}
+  - {fileID: 838778008}
   - {fileID: 940647283}
   - {fileID: 1898231041}
   m_Father: {fileID: 0}
@@ -544,7 +544,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000038147, y: 61}
+  m_AnchoredPosition: {x: 0.000038147, y: -6}
   m_SizeDelta: {x: 296.0021, y: 221.3925}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &659156814
@@ -619,7 +619,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000030518, y: -375}
+  m_AnchoredPosition: {x: 0.000030518, y: -408}
   m_SizeDelta: {x: 1147.6753, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &838778009
@@ -738,7 +738,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &940647283
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1779,8 +1779,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 785, y: 484}
-  m_SizeDelta: {x: 300, y: 50}
+  m_AnchoredPosition: {x: 760, y: 433.4}
+  m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1898231042
 MonoBehaviour:
@@ -1815,7 +1815,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Points:'
+  m_text: 'PUNTOS:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f84faba932ccd5643be35ed2e90e77b0, type: 2}
   m_sharedMaterial: {fileID: -3868485972501437625, guid: f84faba932ccd5643be35ed2e90e77b0, type: 2}
@@ -1842,15 +1842,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -2132,7 +2132,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7356187573965745677, guid: 6ba868ff5f9cad7478ab524c02835a75, type: 3}
+  m_Sprite: {fileID: -3751642553632809386, guid: b4d4e24276101c0469534c97315b623d, type: 3}
   m_Color: {r: 0.6784314, g: 0.6784314, b: 0.6784314, a: 1}
   m_FlipX: 0
   m_FlipY: 0

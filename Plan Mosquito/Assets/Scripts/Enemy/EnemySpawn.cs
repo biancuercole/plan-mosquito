@@ -48,7 +48,7 @@ public class EnemySpawn : MonoBehaviour
         }
         else
         {
-            _sceneManager.ChangeScene("VictoryMinigame");
+            _sceneManager.RandomLevel();
         }
     }
 }
