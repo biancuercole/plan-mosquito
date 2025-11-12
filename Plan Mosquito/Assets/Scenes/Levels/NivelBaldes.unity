@@ -2007,7 +2007,7 @@ MonoBehaviour:
   useUIEvents: 1
   debugMode: 0
   _button: {fileID: 621510315}
-  _scale: {x: 3.2, y: 15.7, z: 1}
+  _scale: {x: 1.7, y: 13.4, z: 1}
   useTapConfirmation: 1
   tapResetTime: 1.5
 --- !u!114 &1856722530

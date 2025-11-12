@@ -36,13 +36,13 @@ EditorBuildSettings:
     path: Assets/Scenes/CorrectScene/CorrectAnswerCasas.unity
     guid: 87697fdcd43fb374880a4a89fe8ffd00
   - enabled: 1
-    path: Assets/Scenes/CorrectScene/CorrectAnswerNenes.unity
+    path: Assets/Scenes/CorrectScene/CorrectAnswerRopa.unity
     guid: 4e45845790e772046bd2b213796d7f87
   - enabled: 1
     path: Assets/Scenes/CorrectScene/CorrectAnswerPatio.unity
     guid: 6b0c4c3f06613c94791fa03d13906906
   - enabled: 1
-    path: Assets/Scenes/CorrectScene/CorrectAnswerRopa.unity
+    path: Assets/Scenes/CorrectScene/CorrectAnswerNenes.unity
     guid: 2dedc0db53c7e7049844fd6ad9cb598b
   - enabled: 1
     path: Assets/Scenes/Victory.unity
