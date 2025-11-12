@@ -14,14 +14,17 @@ public class Proyectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        hitPlayer = true;
-        Destroy(gameObject,4);
+       if (other.CompareTag("Player"))
+        {
+            hitPlayer = true;
+            Destroy(gameObject, 3);
 
-        PointsManager.Instance.SubtractPoints(1);
-        AudioManager.Instance._sfxSource.PlayOneShot(AudioManager.Instance._damage);
-        _damagePlayer.BlinkDamage();
-        _cameraShake.Shake();
-        Debug.Log("mossquito muerto");
+            PointsManager.Instance.SubtractPoints(1);
+            AudioManager.Instance._sfxSource.PlayOneShot(AudioManager.Instance._damage);
+            _damagePlayer.BlinkDamage();
+            _cameraShake.Shake();
+            Debug.Log("mossquito muerto");
+        }
     }
 
     private void OnDestroy()

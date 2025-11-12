@@ -31,9 +31,10 @@ public class HoverText : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     private Vector3 _normalScale;
 
     //doble seleccion para mobile
-    [SerializeField] private float confirmTime = 1.5f; 
-    private bool waitingForConfirm = false;
-    private float confirmTimer = 0f;
+    [SerializeField] private bool useTapConfirmation = true;  // Activar en mobile
+    [SerializeField] private float tapResetTime = 1.5f;       // Tiempo máximo entre toques
+    private bool firstTap = false;
+    private float tapTimer = 0f;
 
     void Start()
     {
@@ -73,12 +74,14 @@ public class HoverText : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 
     void Update()
     {
-        if (waitingForConfirm)
+        if (firstTap)
         {
-            confirmTimer -= Time.deltaTime;
-            if (confirmTimer <= 0)
+            tapTimer += Time.deltaTime;
+            if (tapTimer >= tapResetTime)
             {
-                waitingForConfirm = false;
+                // Si pasa demasiado tiempo, se resetea la confirmación
+                firstTap = false;
+                tapTimer = 0f;
                 HideText();
             }
         }
@@ -225,26 +228,24 @@ public class HoverText : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     // doble seleccion mobile
     public void OnButtonPressed()
     {
-        // Si no estaba esperando confirmación, este es el primer toque
-        if (!waitingForConfirm)
+        if (!useTapConfirmation)
+            return; // Si no está activo, no hace nada especial
+
+        if (!firstTap)
         {
-            waitingForConfirm = true;
-            confirmTimer = confirmTime;
-
-            ShowText(); // Mostrar el texto de ayuda
-            isHovering = true;
-
-            // Evitar que el otro script ejecute la acción todavía
-            // Podés devolver aquí si este script intercepta el click
-            return;
+            // Primer toque → muestra el texto y evita el click real
+            ShowText();
+            firstTap = true;
+            tapTimer = 0f;
         }
         else
         {
-            // Segundo toque dentro del tiempo -> confirmar acción
-            waitingForConfirm = false;
+            // Segundo toque → deja pasar el click (el OnClick del botón)
+            firstTap = false;
             HideText();
+            tapTimer = 0f;
 
-            // Dejar que el botón ejecute su acción normal
+            // Llamar manualmente al botón si hace falta:
             _button.onClick.Invoke();
         }
     }

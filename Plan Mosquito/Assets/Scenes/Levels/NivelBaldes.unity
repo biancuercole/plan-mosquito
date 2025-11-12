@@ -202,6 +202,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1856722529}
+        m_TargetAssemblyTypeName: HoverText, Assembly-CSharp
+        m_MethodName: OnButtonPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1793363818}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: WrongAnswer
@@ -411,6 +423,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1454081548}
+        m_TargetAssemblyTypeName: HoverText, Assembly-CSharp
+        m_MethodName: OnButtonPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1793363818}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: WrongAnswer
@@ -695,7 +719,8 @@ MonoBehaviour:
   debugMode: 0
   _button: {fileID: 1586870608}
   _scale: {x: 3.2, y: 15.7, z: 1}
-  confirmTime: 1.5
+  useTapConfirmation: 1
+  tapResetTime: 1.5
 --- !u!1 &1221669524
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,7 +864,8 @@ MonoBehaviour:
   debugMode: 0
   _button: {fileID: 0}
   _scale: {x: 1.2, y: 1.2, z: 1.2}
-  confirmTime: 1.5
+  useTapConfirmation: 1
+  tapResetTime: 1.5
 --- !u!212 &1244386860
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1300,7 +1326,8 @@ MonoBehaviour:
   debugMode: 0
   _button: {fileID: 929446431}
   _scale: {x: 3.2, y: 15.7, z: 1}
-  confirmTime: 1.5
+  useTapConfirmation: 1
+  tapResetTime: 1.5
 --- !u!114 &1454081549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1559,6 +1586,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1181914865}
+        m_TargetAssemblyTypeName: HoverText, Assembly-CSharp
+        m_MethodName: OnButtonPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1793363818}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: CorrectAnswer
@@ -1969,7 +2008,8 @@ MonoBehaviour:
   debugMode: 0
   _button: {fileID: 621510315}
   _scale: {x: 3.2, y: 15.7, z: 1}
-  confirmTime: 1.5
+  useTapConfirmation: 1
+  tapResetTime: 1.5
 --- !u!114 &1856722530
 MonoBehaviour:
   m_ObjectHideFlags: 0
