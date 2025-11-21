@@ -31,6 +31,7 @@ public class Menu : MonoBehaviour
 
     public RectTransform mosquito;
 
+    private TransicionEscena transicion;
 
     void Awake()
     {
@@ -75,6 +76,9 @@ public class Menu : MonoBehaviour
             playableLevels = new List<string>(allowedLevelNames);
             Debug.LogWarning("No se detectaron niveles válidos en Build Settings; usando lista blanca como fallback.");
         }
+
+        transicion = FindObjectOfType<TransicionEscena>();
+
     }
 
     public void ChangeScene(string sceneName)
@@ -103,18 +107,18 @@ public class Menu : MonoBehaviour
     {
         DOTween.Sequence()
             .Append(mosquito.DOMove(target.position, 0.6f)) // append es que espera a la anterior y join para uqe lo hagan a la vez
-            .Join(mosquito.DOScale(0.2f, 0.2f)) //tamaño - tiempo 
+            .Join(mosquito.DOScale(0.2f, 0.5f)) //tamaño - tiempo 
             .Append(mosquito.DOScale(0.4f, 0.2f))
-            .OnComplete(() => SceneManager.LoadScene("CorrectAnswer" + theme));
+            .OnComplete(() => transicion.TransitionTo("CorrectAnswer" + theme));
     }
 
     public void WrongAnimation(Transform target, Vector3 offset, string theme)
     {
         DOTween.Sequence()
             .Append(mosquito.DOMove(target.position, 0.6f))
-            .Join(mosquito.DOScale(0.2f, 0.2f))
-            .Join(mosquito.DOShakePosition(0.4f, 20f))
-            .OnComplete(() => SceneManager.LoadScene("WrongAnswer" + theme));
+            .Join(mosquito.DOScale(0.2f, 0.5f))
+            .Join(mosquito.DOShakePosition(0.4f, 0.3f))
+            .OnComplete(() => transicion.TransitionTo("WrongAnswer" + theme));
     }
 
     public void ReturnMenu()
@@ -122,7 +126,7 @@ public class Menu : MonoBehaviour
         playedLevels.Clear();
         hideShown = false;
         PointsManager.Instance.RestartPlayerPrefs();
-        SceneManager.LoadScene("MainMenu");
+        transicion.TransitionTo("MainMenu");
     }
 
     public void RandomLevel()
@@ -147,7 +151,7 @@ public class Menu : MonoBehaviour
             Debug.Log("¡Todos los niveles completados! Cargando escena de Victoria.");
             playedLevels.Clear();
             hideShown = false;
-            SceneManager.LoadScene("Victory");
+            transicion.TransitionTo("Victory");
             return;
         }
 
@@ -158,7 +162,7 @@ public class Menu : MonoBehaviour
 
         Debug.Log($"Cargando nivel: {selectedLevel}. Niveles jugados: {playedLevels.Count}/{playableLevels.Count}");
 
-        SceneManager.LoadScene(selectedLevel);
+        transicion.TransitionTo(selectedLevel);
     }
 
     // Llamar desde la escena HideFromRaid cuando el jugador la supere para continuar con el siguiente nivel aleatorio restante
@@ -171,7 +175,7 @@ public class Menu : MonoBehaviour
             Debug.Log("No quedan niveles después de Hide. Cargando Victory.");
             playedLevels.Clear();
             hideShown = false;
-            SceneManager.LoadScene("Victory");
+            transicion.TransitionTo("Victory");
             return;
         }
 
@@ -180,7 +184,7 @@ public class Menu : MonoBehaviour
         playedLevels.Add(selectedLevel);
 
         Debug.Log($"Continuando después de Hide: Cargando nivel {selectedLevel}. Niveles jugados: {playedLevels.Count}/{playableLevels.Count}");
-        SceneManager.LoadScene(selectedLevel);
+        transicion.TransitionTo(selectedLevel);
     }
 
     public void ResetPlayedLevels()
@@ -206,7 +210,7 @@ public class Menu : MonoBehaviour
         {
             Debug.LogWarning("StartNewGame: PointsManager.Instance es null. Asegúrate de que PointsManager esté presente y sea persistente.");
         }
-        SceneManager.LoadScene("MainMenu");
+        transicion.TransitionTo("MainMenu");
     }
 
     public void ShowProgress()
@@ -265,7 +269,7 @@ public class Menu : MonoBehaviour
 
         // Si no hay siguiente escena en build settings, volvemos al MainMenu
         Debug.Log("LoadNextSceneByIndex: No next scene in Build Settings, loading MainMenu");
-        SceneManager.LoadScene("MainMenu");
+        transicion.TransitionTo("MainMenu");
     }
 
 }
