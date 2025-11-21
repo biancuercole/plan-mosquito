@@ -3,6 +3,8 @@ using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using System.Linq;
 using System.IO;
+using DG.Tweening;
+
 
 public class Menu : MonoBehaviour
 {
@@ -26,6 +28,9 @@ public class Menu : MonoBehaviour
 
     // Controla si ya se mostró la escena intermedia en esta sesión (static para persistir aunque Menu se reinicie)
     private static bool hideShown = false;
+
+    public RectTransform mosquito;
+
 
     void Awake()
     {
@@ -81,17 +86,35 @@ public class Menu : MonoBehaviour
         }
         SceneManager.LoadScene(sceneName);
     }
-
-    public void CorrectAnswer(string theme)
+    public void CorrectAnswer(Transform target, Vector3 offset, string theme)
     {
         PointsManager.Instance.AddPoints(10);
-        SceneManager.LoadScene("CorrectAnswer" + theme);
+        CorrectAnimation(target, offset, theme);
     }
 
-    public void WrongAnswer(string theme)
+
+
+    public void WrongAnswer(Transform target, Vector3 offset, string theme)
     {
         PointsManager.Instance.SubtractPoints(5);
-        SceneManager.LoadScene("WrongAnswer" + theme);
+        WrongAnimation(target, offset, theme);
+    }
+    public void CorrectAnimation(Transform target, Vector3 offset, string theme)
+    {
+        DOTween.Sequence()
+            .Append(mosquito.DOMove(target.position, 0.6f)) // append es que espera a la anterior y join para uqe lo hagan a la vez
+            .Join(mosquito.DOScale(0.2f, 0.2f)) //tamaño - tiempo 
+            .Append(mosquito.DOScale(0.4f, 0.2f))
+            .OnComplete(() => SceneManager.LoadScene("CorrectAnswer" + theme));
+    }
+
+    public void WrongAnimation(Transform target, Vector3 offset, string theme)
+    {
+        DOTween.Sequence()
+            .Append(mosquito.DOMove(target.position, 0.6f))
+            .Join(mosquito.DOScale(0.2f, 0.2f))
+            .Join(mosquito.DOShakePosition(0.4f, 20f))
+            .OnComplete(() => SceneManager.LoadScene("WrongAnswer" + theme));
     }
 
     public void ReturnMenu()
@@ -244,4 +267,5 @@ public class Menu : MonoBehaviour
         Debug.Log("LoadNextSceneByIndex: No next scene in Build Settings, loading MainMenu");
         SceneManager.LoadScene("MainMenu");
     }
+
 }
