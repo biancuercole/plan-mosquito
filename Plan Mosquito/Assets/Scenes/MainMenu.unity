@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 12393143}
   - component: {fileID: 12393142}
   m_Layer: 5
-  m_Name: Fondo (1)
+  m_Name: Mosquito
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1353,7 +1353,7 @@ GameObject:
   - component: {fileID: 1124701954}
   - component: {fileID: 1124701953}
   m_Layer: 5
-  m_Name: Fondo (2)
+  m_Name: Nube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

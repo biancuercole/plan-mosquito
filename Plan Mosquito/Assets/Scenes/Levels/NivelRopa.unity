@@ -371,7 +371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.392}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.5019608}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1556,8 +1556,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2457,8 +2457,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1392865859}
   - {fileID: 604584396}
+  - {fileID: 1392865859}
   - {fileID: 1851336385}
   - {fileID: 2042231830}
   - {fileID: 927110920}
@@ -2676,6 +2676,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theme: Ropa
   isCorrect: 1
+  offset: {x: 0, y: 0, z: 0}
   menu: {fileID: 1793363818}
 --- !u!1 &2042231829
 GameObject:
@@ -2837,6 +2838,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theme: Ropa
   isCorrect: 0
+  offset: {x: 0, y: 0, z: 0}
   menu: {fileID: 1793363818}
 --- !u!1 &2081769196
 GameObject:

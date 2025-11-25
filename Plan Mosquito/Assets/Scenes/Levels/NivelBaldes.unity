@@ -279,6 +279,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theme: Baldes
   isCorrect: 0
+  offset: {x: 0, y: 0, z: 0}
   menu: {fileID: 1793363818}
 --- !u!1 &709123247
 GameObject:
@@ -516,6 +517,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theme: Baldes
   isCorrect: 0
+  offset: {x: 0, y: 0, z: 0}
   menu: {fileID: 1793363818}
 --- !u!224 &951342705 stripped
 RectTransform:
@@ -588,8 +590,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1626,6 +1628,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theme: Baldes
   isCorrect: 1
+  offset: {x: 0, y: 0, z: 0}
   menu: {fileID: 1793363818}
 --- !u!1 &1590221614
 GameObject:
@@ -1710,7 +1713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.392}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.5019608}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2118,6 +2121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theme: Frasco
   isCorrect: 0
+  offset: {x: 0, y: 0, z: 0}
   menu: {fileID: 1793363818}
 --- !u!1 &2081769196
 GameObject:

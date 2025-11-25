@@ -106,7 +106,7 @@ public class Menu : MonoBehaviour
     public void CorrectAnimation(Transform target, Vector3 offset, string theme)
     {
         DOTween.Sequence()
-            .Append(mosquito.DOMove(target.position, 0.6f)) // append es que espera a la anterior y join para uqe lo hagan a la vez
+            .Append(mosquito.DOMove(target.position, 1f)) // append es que espera a la anterior y join para uqe lo hagan a la vez
             .Join(mosquito.DOScale(0.2f, 0.5f)) //tamaño - tiempo 
             .Append(mosquito.DOScale(0.4f, 0.2f))
             .OnComplete(() => transicion.TransitionTo("CorrectAnswer" + theme));
@@ -115,7 +115,7 @@ public class Menu : MonoBehaviour
     public void WrongAnimation(Transform target, Vector3 offset, string theme)
     {
         DOTween.Sequence()
-            .Append(mosquito.DOMove(target.position, 0.6f))
+            .Append(mosquito.DOMove(target.position, 1f))
             .Join(mosquito.DOScale(0.2f, 0.5f))
             .Join(mosquito.DOShakePosition(0.4f, 0.3f))
             .OnComplete(() => transicion.TransitionTo("WrongAnswer" + theme));

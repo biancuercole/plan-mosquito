@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.392}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.5019608}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -260,8 +260,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -490,6 +490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theme: Casas
   isCorrect: 0
+  offset: {x: 0, y: 0, z: 0}
   menu: {fileID: 1793363818}
 --- !u!1 &668580378
 GameObject:
@@ -651,6 +652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theme: Casas
   isCorrect: 1
+  offset: {x: 0, y: 0, z: 0}
   menu: {fileID: 1793363818}
 --- !u!1 &871017388
 GameObject:
@@ -1575,6 +1577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theme: Casas
   isCorrect: 0
+  offset: {x: 0, y: 0, z: 0}
   menu: {fileID: 1793363818}
 --- !u!1 &1221669524
 GameObject:
@@ -1870,8 +1873,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 236556209}
   - {fileID: 230319556}
+  - {fileID: 236556209}
   - {fileID: 668580379}
   - {fileID: 560346180}
   - {fileID: 1202477512}

@@ -5,9 +5,9 @@ public class Option : MonoBehaviour
     public string theme;
     public bool isCorrect;
     private Transform targetPoint;
-    public Vector3 offset;
+    public Vector3 offset;   //poner que tan cerca del centro del objeto va el mosquito
 
-    public Menu menu;             // Referencia al script Menu
+    public Menu menu;
 
     private void Awake()
     {
