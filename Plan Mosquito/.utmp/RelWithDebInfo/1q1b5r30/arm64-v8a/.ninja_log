@@ -1,12 +1,23 @@
 # ninja log v5
+13	4056	7845994203458377	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	34deda52c7d5807e
 89	1076	7845994173573235	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	cab2374de127a0c2
+51	3364	7845994196338800	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	43bd461c8d3a98c
 1079	1630	7845994178957094	D:/UNIVERSIDAD/Unity proyectos/PAEF/plan-mosquito/Plan Mosquito/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1q1b5r30/obj/arm64-v8a/libswappywrapper.so	4db03d13f8ea2a27
 34	3342	7845994196176796	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	57f4621355a07427
-51	3364	7845994196338800	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	43bd461c8d3a98c
-65	3387	7845994196651277	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	84a5eb9f476a3004
-1	3422	7845994197077421	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	244235b2f482f070
 25	3511	7845994197973053	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	1bc46071c1bdf886
-42	3879	7845994201626502	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	b3612bd17f6f6f39
+65	3387	7845994196651277	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	84a5eb9f476a3004
 77	3889	7845994201674935	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	4a140350b79e508d
-13	4056	7845994203458377	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	34deda52c7d5807e
+1	3422	7845994197077421	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	244235b2f482f070
+42	3879	7845994201626502	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	b3612bd17f6f6f39
 4057	4219	7845994205135119	D:/UNIVERSIDAD/Unity proyectos/PAEF/plan-mosquito/Plan Mosquito/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1q1b5r30/obj/arm64-v8a/libgame.so	327d59d1aeb4638d
+213	462	7859751131654804	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	cab2374de127a0c2
+463	1272	7859751139263840	D:/UNIVERSIDAD/Unity proyectos/PAEF/plan-mosquito/Plan Mosquito/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1q1b5r30/obj/arm64-v8a/libswappywrapper.so	4db03d13f8ea2a27
+195	1608	7859751143064002	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	43bd461c8d3a98c
+177	1636	7859751143340931	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	57f4621355a07427
+189	1675	7859751143718440	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	84a5eb9f476a3004
+166	1725	7859751144219611	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	244235b2f482f070
+171	1732	7859751144287116	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	1bc46071c1bdf886
+205	1801	7859751145021208	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	4a140350b79e508d
+183	1974	7859751146644697	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	b3612bd17f6f6f39
+13	2044	7859751147384112	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	34deda52c7d5807e
+2045	2242	7859751149421298	D:/UNIVERSIDAD/Unity proyectos/PAEF/plan-mosquito/Plan Mosquito/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1q1b5r30/obj/arm64-v8a/libgame.so	327d59d1aeb4638d
