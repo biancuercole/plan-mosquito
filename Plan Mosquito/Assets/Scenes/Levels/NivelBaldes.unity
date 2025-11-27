@@ -215,18 +215,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 621510318}
-        m_TargetAssemblyTypeName: Option, Assembly-CSharp
-        m_MethodName: OnClickChoice
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Baldes
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &621510316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -451,18 +439,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 929446434}
-        m_TargetAssemblyTypeName: Option, Assembly-CSharp
-        m_MethodName: OnClickChoice
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Baldes
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &929446432
@@ -758,8 +734,7 @@ MonoBehaviour:
   debugMode: 0
   _button: {fileID: 1586870608}
   _scale: {x: 3.2, y: 15.7, z: 1}
-  useTapConfirmation: 1
-  tapResetTime: 1.5
+  _option: {fileID: 1586870611}
 --- !u!1 &1221669524
 GameObject:
   m_ObjectHideFlags: 0
@@ -903,8 +878,7 @@ MonoBehaviour:
   debugMode: 0
   _button: {fileID: 0}
   _scale: {x: 1.2, y: 1.2, z: 1.2}
-  useTapConfirmation: 1
-  tapResetTime: 1.5
+  _option: {fileID: 0}
 --- !u!212 &1244386860
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1291,8 +1265,7 @@ MonoBehaviour:
   debugMode: 0
   _button: {fileID: 929446431}
   _scale: {x: 3.2, y: 15.7, z: 1}
-  useTapConfirmation: 1
-  tapResetTime: 1.5
+  _option: {fileID: 929446434}
 --- !u!114 &1454081549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1562,18 +1535,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1586870611}
-        m_TargetAssemblyTypeName: Option, Assembly-CSharp
-        m_MethodName: OnClickChoice
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Baldes
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1586870609
@@ -2067,8 +2028,7 @@ MonoBehaviour:
   debugMode: 0
   _button: {fileID: 621510315}
   _scale: {x: 1.7, y: 13.4, z: 1}
-  useTapConfirmation: 1
-  tapResetTime: 1.5
+  _option: {fileID: 621510318}
 --- !u!114 &1856722530
 MonoBehaviour:
   m_ObjectHideFlags: 0

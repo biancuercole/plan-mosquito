@@ -558,8 +558,7 @@ MonoBehaviour:
   debugMode: 0
   _button: {fileID: 966464641}
   _scale: {x: 3.2, y: 15.7, z: 1}
-  useTapConfirmation: 1
-  tapResetTime: 1.5
+  _option: {fileID: 966464644}
 --- !u!114 &191125311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -659,8 +658,7 @@ MonoBehaviour:
   debugMode: 0
   _button: {fileID: 0}
   _scale: {x: 1.2, y: 1.2, z: 1.2}
-  useTapConfirmation: 1
-  tapResetTime: 1.5
+  _option: {fileID: 0}
 --- !u!61 &228506649
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -984,8 +982,7 @@ MonoBehaviour:
   debugMode: 0
   _button: {fileID: 0}
   _scale: {x: 1.2, y: 1.2, z: 1.2}
-  useTapConfirmation: 1
-  tapResetTime: 1.5
+  _option: {fileID: 0}
 --- !u!61 &822361714
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1227,8 +1224,7 @@ MonoBehaviour:
   debugMode: 0
   _button: {fileID: 0}
   _scale: {x: 1.2, y: 1.2, z: 1.2}
-  useTapConfirmation: 1
-  tapResetTime: 1.5
+  _option: {fileID: 0}
 --- !u!61 &929446435
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1505,18 +1501,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 966464644}
-        m_TargetAssemblyTypeName: Option, Assembly-CSharp
-        m_MethodName: OnClickChoice
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Patio
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &966464642
@@ -2037,8 +2021,7 @@ MonoBehaviour:
   debugMode: 0
   _button: {fileID: 1952315414}
   _scale: {x: 3.2, y: 15.7, z: 1}
-  useTapConfirmation: 1
-  tapResetTime: 1.5
+  _option: {fileID: 1952315417}
 --- !u!114 &1448993463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2561,18 +2544,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1952315417}
-        m_TargetAssemblyTypeName: Option, Assembly-CSharp
-        m_MethodName: OnClickChoice
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Patio
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1952315415

@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
 
-public class HoverText : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class HoverText : MonoBehaviour/*, IPointerEnterHandler, IPointerExitHandler*/
 {
     [Header("Text Settings")]
     [SerializeField] private GameObject textObject;
@@ -31,10 +31,9 @@ public class HoverText : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     private Vector3 _normalScale;
 
     //doble seleccion para mobile
-    [SerializeField] private bool useTapConfirmation = true;  // Activar en mobile
-    [SerializeField] private float tapResetTime = 1.5f;       // Tiempo máximo entre toques
-    private bool firstTap = false;
-    private float tapTimer = 0f;
+    private bool _firstPressed = false;
+    [SerializeField] private Option _option;
+    private static HoverText lastSelected = null;
 
     void Start()
     {
@@ -74,18 +73,9 @@ public class HoverText : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 
     void Update()
     {
-        if (firstTap)
-        {
-            tapTimer += Time.deltaTime;
-            if (tapTimer >= tapResetTime)
-            {
-                // Si pasa demasiado tiempo, se resetea la confirmación
-                firstTap = false;
-                tapTimer = 0f;
-                HideText();
-            }
-        }
+    
     }
+    /*
     public void OnPointerEnter(PointerEventData eventData)
     {
         if (useUIEvents && !isHovering)
@@ -110,9 +100,9 @@ public class HoverText : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         }
 
         _button.transform.localScale = _normalScale;
-    }
+    }*/
 
-    void OnMouseEnter()
+  /*  void OnMouseEnter()
     {
         if (!useUIEvents && !isHovering)
         {
@@ -131,7 +121,7 @@ public class HoverText : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
             isHovering = false;
         }
     }
-
+    */
     private void ShowText()
     {
         if (textObject != null)
@@ -140,6 +130,9 @@ public class HoverText : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
             if (debugMode) Debug.Log($"Mostrando texto: {hoverMessage}");
 
             UpdateTextContent();
+            if (_button.interactable)
+                _button.transform.localScale = _scale;
+              AudioManager.Instance._sfxSource.PlayOneShot(AudioManager.Instance._buttonHover);
         }
         else
         {
@@ -153,6 +146,7 @@ public class HoverText : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         {
             textObject.SetActive(false);
             if (debugMode) Debug.Log($"Ocultando texto en {gameObject.name}");
+            _button.transform.localScale = _normalScale;
         }
     }
 
@@ -228,26 +222,33 @@ public class HoverText : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     // doble seleccion mobile
     public void OnButtonPressed()
     {
-        if (!useTapConfirmation)
-            return; // Si no está activo, no hace nada especial
 
-        if (!firstTap)
+        if (lastSelected != null && lastSelected != this)
         {
-            // Primer toque → muestra el texto y evita el click real
-            ShowText();
-            firstTap = true;
-            tapTimer = 0f;
+            lastSelected.ResetButtonState();
+        }
+
+        if (_firstPressed)
+        {
+            _firstPressed = false;
+            HideText();
         }
         else
         {
-            // Segundo toque → deja pasar el click (el OnClick del botón)
-            firstTap = false;
-            HideText();
-            tapTimer = 0f;
+            _firstPressed = true;
+            ShowText();
+            lastSelected = this; 
+        }
 
-            // Llamar manualmente al botón si hace falta:
-            _button.onClick.Invoke();
+        if (!_firstPressed)
+        {
+            _option.OnClickChoice();
         }
     }
 
+    public void ResetButtonState()
+    {
+        _firstPressed = false;
+        HideText();
+    }
 }

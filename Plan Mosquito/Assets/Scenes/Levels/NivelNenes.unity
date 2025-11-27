@@ -353,8 +353,7 @@ MonoBehaviour:
   debugMode: 0
   _button: {fileID: 1265906934}
   _scale: {x: 3.2, y: 15.7, z: 1.2}
-  useTapConfirmation: 1
-  tapResetTime: 1.5
+  _option: {fileID: 1265906937}
 --- !u!1 &719229482
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,8 +699,7 @@ MonoBehaviour:
   debugMode: 0
   _button: {fileID: 0}
   _scale: {x: 1.2, y: 1.2, z: 1.2}
-  useTapConfirmation: 1
-  tapResetTime: 1.5
+  _option: {fileID: 0}
 --- !u!114 &881491230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -970,18 +968,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 964357202}
-        m_TargetAssemblyTypeName: Option, Assembly-CSharp
-        m_MethodName: OnClickChoice
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Nenes
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &964357200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1206,8 +1192,7 @@ MonoBehaviour:
   debugMode: 0
   _button: {fileID: 0}
   _scale: {x: 1.2, y: 1.2, z: 1.2}
-  useTapConfirmation: 1
-  tapResetTime: 1.5
+  _option: {fileID: 0}
 --- !u!114 &1135267399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1599,18 +1584,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1265906937}
-        m_TargetAssemblyTypeName: Option, Assembly-CSharp
-        m_MethodName: OnClickChoice
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Nenes
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1265906935
@@ -2108,8 +2081,7 @@ MonoBehaviour:
   debugMode: 0
   _button: {fileID: 964357199}
   _scale: {x: 3.2, y: 15.7, z: 1.2}
-  useTapConfirmation: 1
-  tapResetTime: 1.5
+  _option: {fileID: 964357202}
 --- !u!1 &1490288653
 GameObject:
   m_ObjectHideFlags: 0
@@ -2689,8 +2661,7 @@ MonoBehaviour:
   debugMode: 0
   _button: {fileID: 1265906934}
   _scale: {x: 3.2, y: 15.7, z: 1.2}
-  useTapConfirmation: 1
-  tapResetTime: 1.5
+  _option: {fileID: 0}
 --- !u!1 &1793363817
 GameObject:
   m_ObjectHideFlags: 0
@@ -2909,8 +2880,7 @@ MonoBehaviour:
   debugMode: 0
   _button: {fileID: 964357199}
   _scale: {x: 3.2, y: 15.7, z: 1.2}
-  useTapConfirmation: 1
-  tapResetTime: 1.5
+  _option: {fileID: 0}
 --- !u!1 &2081769196
 GameObject:
   m_ObjectHideFlags: 0

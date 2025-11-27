@@ -281,8 +281,7 @@ MonoBehaviour:
   debugMode: 0
   _button: {fileID: 2042231831}
   _scale: {x: 3.2, y: 15.7, z: 1.2}
-  useTapConfirmation: 1
-  tapResetTime: 1.5
+  _option: {fileID: 2042231834}
 --- !u!114 &208023796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -503,8 +502,7 @@ MonoBehaviour:
   debugMode: 0
   _button: {fileID: 0}
   _scale: {x: 1.2, y: 1.2, z: 1.2}
-  useTapConfirmation: 1
-  tapResetTime: 1.5
+  _option: {fileID: 0}
 --- !u!114 &881491230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -813,8 +811,7 @@ MonoBehaviour:
   debugMode: 0
   _button: {fileID: 0}
   _scale: {x: 1.2, y: 1.2, z: 1.2}
-  useTapConfirmation: 1
-  tapResetTime: 1.5
+  _option: {fileID: 0}
 --- !u!114 &1135267399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1182,8 +1179,7 @@ MonoBehaviour:
   debugMode: 0
   _button: {fileID: 1851336386}
   _scale: {x: 3.2, y: 15.7, z: 1.2}
-  useTapConfirmation: 1
-  tapResetTime: 1.5
+  _option: {fileID: 1851336389}
 --- !u!114 &1291872971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2612,18 +2608,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1851336389}
-        m_TargetAssemblyTypeName: Option, Assembly-CSharp
-        m_MethodName: OnClickChoice
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Ropa
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1851336387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2772,18 +2756,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2042231834}
-        m_TargetAssemblyTypeName: Option, Assembly-CSharp
-        m_MethodName: OnClickChoice
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Ropa
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2042231832
