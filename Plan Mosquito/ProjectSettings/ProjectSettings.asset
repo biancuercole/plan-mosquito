@@ -8,7 +8,7 @@ PlayerSettings:
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
-  defaultScreenOrientation: 2
+  defaultScreenOrientation: 3
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
@@ -363,7 +363,7 @@ PlayerSettings:
       m_Kind: 0
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: f3a327b9c41aaaa4e964cdbc1da8d474, type: 3}
+      - {fileID: 2800000, guid: 6ba868ff5f9cad7478ab524c02835a75, type: 3}
       - {fileID: 2800000, guid: 4031568922379b54c9f838760a88b834, type: 3}
       m_Width: 432
       m_Height: 432
