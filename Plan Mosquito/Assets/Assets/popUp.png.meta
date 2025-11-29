@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e4f68902ba45ca14aa978201cdc4bfa2
+guid: e757e03970770e043b806c88502d69bc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 952337235231903163
-    second: logoThreeCandles_0
+      213: -1429949061329261776
+    second: popUp_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: logoThreeCandles_0
+      name: popUp_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 400
-        height: 400
+        width: 1549
+        height: 882
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bbd00647ba1673d00800000000000000
-      internalID: 952337235231903163
+      spriteID: 03be098a7ecc72ce0800000000000000
+      internalID: -1429949061329261776
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      logoThreeCandles_0: 952337235231903163
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
