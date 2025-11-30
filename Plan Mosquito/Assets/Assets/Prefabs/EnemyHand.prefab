@@ -103,7 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prefabSpray: {fileID: 8999289032197269166, guid: 173baef7983829a4f8dfc08a6d84595d, type: 3}
   _lifetime: 3
-  _offSet: {x: 5.5, y: 2.52, z: 0}
+  _offSet: {x: 6.2, y: 2.5, z: 0}
 --- !u!61 &204295286389772069
 BoxCollider2D:
   m_ObjectHideFlags: 0
